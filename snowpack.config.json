@@ -1,0 +1,14 @@
+{
+  "extends": "@snowpack/app-scripts-react",
+  "plugins": [
+    "@snowpack/plugin-react-refresh"
+  ],
+  "scripts": {
+    "mount:static": "mount static --to /static"
+  },
+  "buildOptions": {
+    "baseUrl": "https://vikpe.org/draft",
+    "clean": true
+  }
+}
+

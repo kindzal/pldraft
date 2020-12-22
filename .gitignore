@@ -1,0 +1,6 @@
+.build/
+.idea/
+build/
+web_modules/
+!docs/web_modules/
+node_modules/

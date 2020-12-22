@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build && rm -rf docs && mkdir docs && cp -r build/* docs && cp public/_config.yml docs",
+    "publish": "yarn run build && git add -A && git commit -m 'Build site' && git push",
+    "test": "jest",
+    "format": "prettier --write \"src/**/*.{js,jsx,css}\"",
+    "lint": "prettier --check \"src/**/*.{js,jsx,css}\""
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-class-properties": "^7.12.1",
+    "react": "^17.0.1",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@snowpack/app-scripts-react": "^1.12.6",
+    "@snowpack/plugin-react-refresh": "^2.3.7",
+    "prettier": "^2.2.0",
+    "snowpack": "^2.17.1"
+  }
+}
