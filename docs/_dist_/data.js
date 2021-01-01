@@ -70,6 +70,10 @@ export const players = {
     name: "Insane",
     country_code: "pl"
   },
+  Kat: {
+    name: "Kat",
+    country_code: "pl"
+  },
   Kornih: {
     name: "Kornih",
     country_code: "pl"
