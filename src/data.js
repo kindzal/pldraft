@@ -42,6 +42,7 @@ export const players = {
   Goniec: { name: "Goniec", country_code: "pl" },
   Grl: { name: "Grl", country_code: "pl" },
   Insane: { name: "Insane", country_code: "pl" },
+  Kat: { name: "Kat", country_code: "pl" },
   Kornih: { name: "Kornih", country_code: "pl" },
   Lolek: { name: "Lolek", country_code: "pl" },
   Macler: { name: "Macler", country_code: "pl" },
