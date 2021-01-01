@@ -129,7 +129,7 @@ class SampleBoard extends React.Component {
       this.state.teams["playerPool"].playerNames.length;
 
     const numberOfTeams = Object.values(this.state.teams).length - 1;
-    const pickLimit = numberOfTeams * (8 + 1);
+    const pickLimit = Object.keys(players).length;
     const draftStatus =
       pickedPlayerCount === pickLimit ? "completed" : "in-progress";
 
@@ -140,7 +140,6 @@ class SampleBoard extends React.Component {
     }
 
     const sortedTeams = Object.values(this.state.teams).sort(sortTeams);
-
     const pickRound = 1 + Math.floor(this.state.pickIndex / numberOfTeams);
     const pickNumber = 1 + (this.state.pickIndex % numberOfTeams);
 
